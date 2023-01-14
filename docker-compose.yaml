@@ -1,0 +1,30 @@
+version: "3.5"
+services:
+  postgres:
+    container_name: postgres_container
+    image: postgres:10.5
+    networks:
+      - test-app-network
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: simoQB24188
+      POSTGRES_DB: testAppDB
+      PGDATA: /data/postgres
+    volumes:
+      - ./data:/data/postgres
+    ports:
+      - "5431:5432"
+
+  test-app:
+    container_name: test-app
+    image: test_app
+    depends_on:
+      - postgres
+    networks: 
+      - test-app-network
+    ports:
+      - "8080:8080"
+
+networks:
+  test-app-network:
+    driver: bridge

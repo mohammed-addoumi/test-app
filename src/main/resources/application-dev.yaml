@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: test-app
+  datasource:
+    url: jdbc:postgresql://postgres:5432/testAppDB
+    username: postgres
+    password: simoQB24188
+  flyway:
+    location:  classpath:db/migration
+
+logging:
+  level:
+    org:
+      flyway:
+        core: TRACE
+      hibernate:
+        sql: TRACE
+
+
+
+
