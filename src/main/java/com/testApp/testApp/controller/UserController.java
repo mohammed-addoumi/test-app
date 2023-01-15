@@ -25,4 +25,9 @@ public class UserController {
         return userProvider.save(user);
     }
 
+    @GetMapping("merge")
+    public String merge(){
+        return "merge";
+    }
+
 }
