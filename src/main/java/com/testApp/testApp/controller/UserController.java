@@ -40,6 +40,11 @@ public class UserController {
         return "test1";
     }
 
+    @GetMapping("test2")
+    public String test2(){
+        return "test2";
+    }
+
 
     @GetMapping("test")
     public String test(){
