@@ -30,4 +30,9 @@ public class UserController {
         return "merge";
     }
 
+    @GetMapping("test")
+    public String test(){
+        return "test";
+    }
+
 }
