@@ -34,4 +34,9 @@ public class UserController {
     public String rebase(){
         return "rebase";
     }
+    @GetMapping("test")
+    public String test(){
+        return "test";
+    }
+
 }
