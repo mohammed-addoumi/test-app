@@ -45,10 +45,18 @@ public class UserController {
         return "test2";
     }
 
+    @GetMapping("test4")
+    public String test4(){
+        return "test4";
+    }
 
     @GetMapping("test")
     public String test(){
         return "test";
     }
 
+    @GetMapping("test3")
+    public String test3(){
+        return "test 3";
+    }
 }
