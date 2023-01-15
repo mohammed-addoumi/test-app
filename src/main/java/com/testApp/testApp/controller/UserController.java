@@ -30,4 +30,8 @@ public class UserController {
         return "merge";
     }
 
+    @GetMapping("rebase")
+    public String rebase(){
+        return "rebase";
+    }
 }
