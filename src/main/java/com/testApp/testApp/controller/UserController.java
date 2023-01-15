@@ -24,9 +24,4 @@ public class UserController {
     public User addUser(@RequestBody User user){
         return userProvider.save(user);
     }
-
-    @GetMapping("merge")
-    public String merge(){
-        return "merge";
-    }
 }
