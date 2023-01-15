@@ -29,4 +29,9 @@ public class UserController {
     public String merge(){
         return "merge";
     }
+
+    @GetMapping("rebase")
+    public String rebase(){
+        return "rebase";
+    }
 }
